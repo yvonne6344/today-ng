@@ -1,0 +1,11 @@
+<div class="full-screen page-content">
+  <div class="wrapper">
+    <img src="../../../assets/img/logo.png" alt="" class="logo-img">
+    <div class="text-wrapper">
+      <h1 class="title-text">Today</h1>
+    </div>
+    <input nz-input placeholder="請輸入您喜歡的使用者名稱" #usernameInput [(ngModel)]="username">
+    <button nz-button [nzType]="'primary'" (click)="completeSetup()" [disabled]="!usernameInput.value">開始</button>
+    <div class="copy-right">Copyright &copy; 2018 Yvonne Huang</div>
+  </div>
+</div>
