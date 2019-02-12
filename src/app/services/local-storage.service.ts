@@ -8,7 +8,7 @@ const ls = localStorage;
 export class LocalStorageService {
   constructor() {}
 
-  public get<T>(key: string): any {
+  public get<T>(key: string): T {
     return JSON.parse(ls.getItem(key)) as T;
   }
 
