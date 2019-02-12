@@ -7,15 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import zh from '@angular/common/locales/zh';
 import { NgZorroAntdModule, NZ_I18N, zh_TW } from 'ng-zorro-antd';
 // Module
+import { AppRoutingModule } from './app-routing.module';
 import { SetupModule } from './pages/setup/setup.module';
 import { MainModule } from './pages/main/main.module';
-// Routing Module
-import { AppRoutingModule } from './app-routing.module';
 import { MainRoutingModule } from './pages/main/main-routing.module';
-// Service
-import { LocalStorageService } from './services/local-storage.service';
 // Component
 import { AppComponent } from './app.component';
+// Service
+import { LocalStorageService } from './services/local-storage.service';
 
 registerLocaleData(zh);
 
@@ -23,11 +22,11 @@ registerLocaleData(zh);
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    NgZorroAntdModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule,
+    NgZorroAntdModule,
+    AppRoutingModule,
     SetupModule,
     MainModule,
     MainRoutingModule
