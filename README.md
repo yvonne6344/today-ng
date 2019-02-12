@@ -1,6 +1,6 @@
 # TodayNg
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4 & [NG-ZORRO](https://ng.ant.design/) version 7.0.0-rc.3.
 
 ## Development server
 
